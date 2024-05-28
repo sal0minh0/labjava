@@ -24,6 +24,7 @@ Joguinho de labirinto onde os jogadores devem navegar por um labirinto gerado.
 - Sistema de vida.
 - Sistema de Pontos.
 - Paredes estão faltando.
+- Emojis no game.
 
 ## Principais Bibliotecas Utilizadas
 - ArrayList, Swing, Color, Graphics, Graphics2D.
