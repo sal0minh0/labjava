@@ -36,9 +36,8 @@ Joguinho de labirinto onde os jogadores devem navegar por um labirinto gerado.
 4. `Tesouro`: Representa um tesouro que pode ser coletado pelo jogador.
 
 ## Como Executar
-Para executar o jogo, basta compilar o arquivo `Main.java` com o compilador java e depois executar com o jvm.
+Para executar o jogo, basta executar o arquivo `Main.java` com a JVM instalada.
 
 ```bash
-javac Main.java
 
 java Main.java
