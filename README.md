@@ -19,11 +19,11 @@ Joguinho de labirinto onde os jogadores devem navegar por um labirinto gerado.
 
 ## Funcionalidades que tentamos implementar
 
-- Tesouro
-- Perigo
-- Sistema de vida
-- Sistema de Pontos
-- Paredes estão faltando
+- Tesouro.
+- Perigo.
+- Sistema de vida.
+- Sistema de Pontos.
+- Paredes estão faltando.
 
 ## Principais Bibliotecas Utilizadas
 - ArrayList, Swing, Color, Graphics, Graphics2D.
