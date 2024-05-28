@@ -36,13 +36,13 @@ public class GUI {
         frame.setLayout(new BorderLayout());
         labirinto.gerarMaze();
 
-        btnUp = new JButton("↑");
-        btnDown = new JButton("↓");
-        btnLeft = new JButton("←");
-        btnRight = new JButton("→");
+        btnUp = new JButton("\u2191");
+        btnDown = new JButton("\u2193");
+        btnLeft = new JButton("\u2190");
+        btnRight = new JButton("\u2192");
         btnMove = new JButton("Mover");
 
-        lblLocation = new JLabel("Localização: ");
+        lblLocation = new JLabel("Localizacao: " + aventureiro.getLocalizacaoAtual());
         txtMazeStructure = new JTextArea();
         txtMazeStructure.setText(labirinto.toString());
 
@@ -95,18 +95,6 @@ public class GUI {
         frame.setVisible(true);
     }
 
-    private void updateMazeStructure() {
-        txtMazeStructure.setText("");
-
-        String[][] maze = labirinto.getMazeStructure();
-
-        for (int i = 0; i < maze.length; i++) {
-            for (int j = 0; j < maze[i].length; j++) {
-                txtMazeStructure.append(maze[i][j] + " ");
-            }
-            txtMazeStructure.append("\n");
-        }
-    }
 
     private void moveAdventurer(ActionEvent e) {
         JButton clickedButton = (JButton) e.getSource();
@@ -120,12 +108,14 @@ public class GUI {
         } else if (clickedButton == btnLeft) {
             aventureiro.setPosicaoX(aventureiro.getPosicaoX() - 1);
             aventureiro.setLocalizacaoAtual("Oeste");
-               } else if (clickedButton == btnRight) {
+        } else if (clickedButton == btnRight) {
             aventureiro.setPosicaoX(aventureiro.getPosicaoX() + 1);
             aventureiro.setLocalizacaoAtual("Leste");
         }
-
         ((MazePanel) mazePanel).setAdventurerPosition(aventureiro.getPosicaoX(), aventureiro.getPosicaoY());
         ((MazePanel) mazePanel).repaint();
+        lblLocation.setText(aventureiro.getLocalizacaoAtual());
+        System.out.println("Voce se moveu para o: " + aventureiro.getLocalizacaoAtual());
     }
+    
 }

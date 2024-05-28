@@ -95,19 +95,19 @@ public class Labirinto {
             for (int j = 0; j < 10; j++) {
                 switch (mazeStructure[i][j]) {
                     case "path":
-                        sb.append("🟢");
+                        sb.append("\uD83D\uDD35");
                         break;
                     case "wall":
-                        sb.append("🔴");
+                        sb.append("\uD83D\uDD34");
                         break;
                     case "treasure":
-                        sb.append("💎"); 
+                        sb.append("\uD83D\uDC8E"); 
                         break;
                     case "danger":
-                        sb.append("☠️"); 
+                        sb.append("\u2620"); 
                         break;
                     default:
-                        sb.append("❓");
+                        sb.append("\u2753");
                 }
             }
             sb.append("\n"); 
