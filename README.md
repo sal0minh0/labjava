@@ -1,6 +1,6 @@
 # Labirinto
 
-Este projeto foi desenvolvido em java com o que conseguimos até o momento.
+Este projeto foi desenvolvido em java com o que conseguimos até o momento. -> Dia 02/06 -> Dar fork e continuar esse projeto em java
 
 ## Alunos
 - [Gregório de Albuquerque Borba Cavalcanti]
